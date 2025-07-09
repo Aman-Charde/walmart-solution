@@ -1,0 +1,332 @@
+/* Reset and Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+}
+
+.dashboard {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #38bdf8;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Hero */
+.hero {
+  background: white;
+  padding: 40px 32px;
+  border-radius: 16px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+.hero-buttons .primary,
+.hero-buttons .secondary {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-buttons .primary {
+  background: #2563eb;
+  color: white;
+}
+
+.hero-buttons .secondary {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+  margin-top: 40px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.stat-card .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-card .note {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+/* Card Colors */
+.blue { background-color: #dbeafe; }
+.yellow { background-color: #fef9c3; }
+.green { background-color: #dcfce7; }
+.cyan { background-color: #ccfbf1; }
+
+/* Alerts */
+.alerts {
+  margin-top: 40px;
+}
+
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.alert-card {
+  background: white;
+  padding: 16px;
+  border-left: 6px solid #dc2626;
+  border-radius: 12px;
+}
+
+.alert-status {
+  font-weight: bold;
+  color: #dc2626;
+}
+
+.alert-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.red-btn {
+  background: #dc2626;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.outline-btn {
+  border: 2px solid #dc2626;
+  background: transparent;
+  color: #dc2626;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* Trend + Weather */
+.trend-weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.trend-weather ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trend-weather li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.trend {
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.weather-placeholder {
+  background: #e5e7eb;
+  height: 120px;
+  border-radius: 8px;
+}
+
+/* Inventory */
+.inventory-section {
+  margin-top: 60px;
+}
+
+.inventory-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.status-card {
+  flex: 1;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.status-card.green { border-left: 6px solid #22c55e; }
+.status-card.yellow { border-left: 6px solid #facc15; }
+.status-card.red { border-left: 6px solid #ef4444; }
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.status-label.good { color: #22c55e; font-weight: bold; }
+.status-label.warning { color: #facc15; font-weight: bold; }
+.status-label.critical { color: #ef4444; font-weight: bold; }
+
+.action-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.action-btn.urgent-restock { background: #ef4444; }
+.action-btn.increase-stock { background: #f59e0b; }
+.action-btn.monitor { background: #22c55e; }
+
+/* AI Actions */
+.ai-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.ai-card {
+  flex: 1;
+  padding: 16px;
+  border-radius: 12px;
+  color: white;
+}
+
+.ai-card.red { background: #dc2626; }
+.ai-card.yellow { background: #f59e0b; }
+.ai-card.green { background: #16a34a; }
+
+.ai-card button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ai-card .note {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: white;
+  padding: 40px 24px;
+  margin-top: 60px;
+  border-radius: 16px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.footer-grid h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-grid li {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
