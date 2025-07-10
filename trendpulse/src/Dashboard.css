@@ -1,0 +1,410 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+}
+
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2937;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #111827;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+.navbar .avatar {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+  background-color: white;
+  padding: 40px;
+  margin-top: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button.primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.secondary {
+  border: 2px solid #2563eb;
+  background-color: transparent;
+  color: #2563eb;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+  margin-top: 40px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card.blue { background-color: #e0edff; }
+.stat-card.yellow { background-color: #fffacc; }
+.stat-card.green { background-color: #d4f9dc; }
+.stat-card.cyan { background-color: #d2f5f9; }
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.note {
+  font-size: 12px;
+  color: #4b5563;
+  margin-top: 6px;
+}
+
+/* Alerts */
+.alerts {
+  margin-top: 40px;
+}
+
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.alert-card {
+  background-color: #ffecec;
+  border: 1px solid #f87171;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.alert-item {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.alert-note {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.alert-status {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.alert-buttons button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.red-btn {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.outline-btn {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+}
+
+/* Trend & Weather Section */
+.trend-weather {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.trend-weather > div {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.trend-weather ul {
+  list-style: none;
+}
+
+.trend-weather li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.trend {
+  color: green;
+  font-weight: bold;
+}
+
+/* Inventory Table */
+.inventory-section {
+  margin-top: 50px;
+}
+
+.inventory-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.status-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  color: #111827;
+}
+
+.status-card.green {
+  background-color: #d1fae5;
+}
+
+.status-card.yellow {
+  background-color: #fef9c3;
+}
+
+.status-card.red {
+  background-color: #fee2e2;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.inventory-table th, .inventory-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.status-label {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-label.critical {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+.status-label.warning {
+  background-color: #fef08a;
+  color: #92400e;
+}
+
+.status-label.good {
+  background-color: #bbf7d0;
+  color: #065f46;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-btn.monitor {
+  background-color: #e5e7eb;
+}
+
+.action-btn.increase-stock {
+  background-color: #facc15;
+}
+
+.action-btn.urgent-restock {
+  background-color: #f71515;
+  color: white;
+}
+
+/* AI Cards */
+.ai-actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.ai-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  color: #111827;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ai-card.red {
+  background-color: #fee2e2;
+}
+
+.ai-card.yellow {
+  background-color: #fef9c3;
+}
+
+.ai-card.green {
+  background-color: #d1fae5;
+}
+
+.ai-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ai-card.red button {
+  background-color: #ef4444;
+  color: white;
+}
+
+.ai-card.yellow button {
+  background-color: #facc15;
+  color: #111827;
+}
+
+.ai-card.green button {
+  background-color: #10b981;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 16px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer h5 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #d1d5db;
+}
