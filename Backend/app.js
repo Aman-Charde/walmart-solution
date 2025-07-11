@@ -3,6 +3,9 @@ const session = require('express-session');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const retailerRoutes = require('./routes/retailerRoutes'); // ✅ CORRECT
+const productRoutes = require('./routes/productRoutes');
+const predictionRoutes = require('./routes/predictionRoutes');
+
 
 require('dotenv').config();
 
@@ -29,6 +32,9 @@ app.use(session({
 
 // ✅ Use the correct router
 app.use('/api/retailers', retailerRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/predict', predictionRoutes);
+
 
 app.get('/', (req, res) => {
   res.send('Backend is running...');
