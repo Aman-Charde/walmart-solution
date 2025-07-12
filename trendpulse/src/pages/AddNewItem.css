@@ -1,0 +1,78 @@
+.authcontainer {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #f2f1ff, #eae8fc);
+  perspective: 1200px;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.add-item-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.add-item-container h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.add-item-container p {
+  color: #4b5563;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.add-item-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #374151;
+}
+
+.add-item-form input[type="text"],
+.add-item-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.add-item-form button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-item-form button:hover {
+  background-color: #2563eb;
+}
