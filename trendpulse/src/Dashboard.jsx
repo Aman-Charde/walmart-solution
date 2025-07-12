@@ -15,7 +15,7 @@ const Dashboard = () => {
       <HeroSection />
       <StatsGrid />
       <Alerts />
-      <TrendWeather />
+      {/* <TrendWeather /> */}
       <InventoryTable />
       <AIRecommendations />
       <Footer />
