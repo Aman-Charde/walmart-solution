@@ -6,7 +6,7 @@ const HeroSection = () => (
       social media, weather patterns, and local events to predict demand spikes and prevent lost sales.
     </p>
     <div className="hero-buttons">
-      <button className="primary">Analyse</button>
+      <button className="primary">Refresh!</button>
       <button className="secondary">Add new Item</button>
 
     </div>
