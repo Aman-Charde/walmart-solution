@@ -9,7 +9,12 @@
   overflow: hidden;
   padding: 0 16px;
 }
-
+input, select{
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: whitesmoke;
+}
 .add-item-container {
   max-width: 600px;
   margin: 60px auto;
