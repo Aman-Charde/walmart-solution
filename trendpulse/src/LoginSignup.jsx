@@ -49,6 +49,7 @@ export default function LoginSignUp() {
           password: '',
         }));
         setIsSignup(false);
+
       } else {
         if (!formData.email || !formData.password) {
           setMessage('Email and password are required.');
@@ -66,8 +67,10 @@ export default function LoginSignUp() {
         setMessage(res.data.message);
         setMessageType('success');
 
-        // Navigate to dashboard after login
-        navigate('/dashboard');
+        // ✅ Delay navigation to dashboard
+        setTimeout(() => {
+          navigate('/dashboard');
+        }, 1000); // 2 seconds
       }
     } catch (err) {
       setMessage(err?.response?.data?.message || 'Something went wrong');
