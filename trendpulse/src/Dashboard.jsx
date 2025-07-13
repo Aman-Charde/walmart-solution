@@ -5,6 +5,8 @@ import Alerts from "./components/Alerts";
 import TrendWeather from "./components/TrendWeather";
 import InventoryTable from "./components/InventoryTable";
 import AIRecommendations from "./components/AIRecommendations";
+import Ddashboard from "./components/dashboard";
+// Use <Dashboard /> where needed
 import Footer from "./components/Footer";
 import "./Dashboard.css";
 
@@ -14,10 +16,7 @@ const Dashboard = () => {
       <Navbar />
       <HeroSection />
       <StatsGrid />
-      <Alerts />
-      {/* <TrendWeather /> */}
-      <InventoryTable />
-      <AIRecommendations />
+      <Ddashboard />
       <Footer />
     </div>
   );

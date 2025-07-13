@@ -6,17 +6,18 @@
 }
 
 .dashboard {
-  width: 100%;
+  width: 1580px;
   max-width: 1600px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #f5f7fa;
+  background: linear-gradient(to bottom right, #66ffff 0%, #7f56da 100%);
+
 }
 
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f5f7fa;
+  background: linear-gradient(to bottom right, #66ffff 0%, #7f56da 100%);
   color: #1f2937;
 }
 

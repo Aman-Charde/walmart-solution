@@ -10,7 +10,6 @@ const StatsGrid = () => (
     <div className="section-header">
       <h2>Real-Time Dashboard</h2>
       <div className="filter">
-        <select><option>All Cities</option></select>
         <label>🔵 Live Data</label>
       </div>
     </div>
