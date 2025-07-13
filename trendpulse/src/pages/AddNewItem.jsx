@@ -7,7 +7,8 @@ export default function AddNewItem() {
     productName: "",
     city: "",
     category: "",
-    spikeDetected: false,
+    quantity: "",
+    price: ""
   });
 
   const handleChange = (e) => {
@@ -61,23 +62,28 @@ export default function AddNewItem() {
               />
             </label>
 
-            <label >
-                Urgency Level
-                <select  name="urgency" value={formData.urgency} onChange={handleChange} required>
-                  <option value="High">High</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Low">Low</option>
-                </select> 
-            </label>         
-    
-            <label className="checkbox-label">
+            <label>
+              Quantity In Stock
               <input
-                type="checkbox"
-                name="spikeDetected"
-                checked={formData.spikeDetected}
+                type="number"
+                name="quantity"
+                value={formData.quantity}
                 onChange={handleChange}
+                required min="0"
               />
-              Critical Spike Detected
+            </label>
+
+            <label>
+              Price Per Unit (₹)
+              <input
+                type="number"
+                name="price"
+                value={formData.price}
+                onChange={handleChange}
+                required
+                min="0"
+                step="0.01"
+              />
             </label>
     
             <button type="submit">Add Item</button>

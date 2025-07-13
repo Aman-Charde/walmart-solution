@@ -48,6 +48,7 @@
 }
 
 .add-item-form input[type="text"],
+.add-item-form input[type="number"],
 .add-item-form select {
   width: 100%;
   padding: 10px 12px;
