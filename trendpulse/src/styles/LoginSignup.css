@@ -2,6 +2,7 @@
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column; /* 🔄 Change */
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #f2f1ff, #eae8fc);
@@ -61,6 +62,7 @@
   border: 1px solid #ccc;
   font-size: 15px;
   background-color: #fafafa;
+  color: #000; /* ✅ ADD THIS LINE */
 }
 
 .auth-card input:focus {
@@ -113,5 +115,40 @@
 
   .auth-card {
     padding: 30px 20px;
+  }
+}
+
+
+.auth-message {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+.auth-message.success {
+  background-color: #e0f9e7;
+  color: #2b7a0b;
+  border: 1px solid #2b7a0b;
+}
+
+.auth-message.error {
+  background-color: #ffe3e3;
+  color: #a10000;
+  border: 1px solid #a10000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

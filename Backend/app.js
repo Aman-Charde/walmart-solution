@@ -13,7 +13,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:3000', // frontend port
+  origin: 'http://localhost:5173', // React server
   credentials: true
 }));
 
