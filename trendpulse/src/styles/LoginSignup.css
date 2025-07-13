@@ -40,9 +40,17 @@
   transform: rotateY(0deg);
 }
 
+input {
+  color: black;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
 .auth-back {
   transform: rotateY(180deg);
   position: absolute;
+  color: black;
   top: 0;
   left: 0;
 }
